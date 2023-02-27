@@ -33,8 +33,10 @@
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/cp-logo-blue.svg %}" alt="The Carpentries logo" />
       </a>
       {% elsif site.carpentry == "incubator" %}
-      <a href="{{ site.incubator_lesson_site }}" class="pull-left">
+      <a href="{{ site.incubator }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/incubator-logo-blue.svg %}" alt="The Carpentries Incubator logo" />
+      <a href="https://imageomics.org/" class="pull-left">
+        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/imageomics.png %}" alt="Imageomics logo (Fishes variant)" />
       {% elsif site.carpentry == "lab" %}
       <a href="{{ relative_root_path }}{% link index.md %}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/carpentrieslab.svg %}" alt="The Carpentries Lab" />
