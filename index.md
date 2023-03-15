@@ -396,6 +396,7 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
+{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
@@ -407,9 +408,11 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
+  {% elsif site.curriculum == "imageomics" %}
+  Imageomics
   {% endif %}
   workshop,
-  you will need access to software as described below.
+  you will need access to software and other resources as described below.
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
@@ -417,7 +420,6 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-{% endcomment %}
 
 {% comment %}
 For online workshops, the section below provides:
@@ -436,6 +438,7 @@ to include the relevant installation instructions.
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
+{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
@@ -444,8 +447,5 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+{% include custom/setup.html %}
 {% endif %}
-{% endcomment %}

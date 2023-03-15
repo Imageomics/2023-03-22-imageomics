@@ -80,6 +80,28 @@ Social sciences workshops
 {% include warning-flavor.html %}
 {% endif %}
 
+{% comment %}
+Imageomics workshop
+{% endcomment %}
+
+{% elsif site.curriculum == "imageomics" %}
+
+<p>The setup instructions for the Imageomics workshop lessons are the following:
+  <ul>
+    <li><strong>Introduction to Docker</strong>: Please read and follow the <a href="https://imageomics.github.io/docker-workshop/setup.html">setup and installation instructions</a>
+      given on the lesson webpage. (The <i>Files to download</i> section can be done at the beginning of the lesson.)
+    </li>
+    <li><strong>Workflow Automation using Snakemake</strong> requires access to the
+      <a href="https://www.osc.edu/" target="_blank">OSC cluster</a>. Please contact
+      <a href="https://imageomics.osu.edu/dr.-matthew-thompson">Matthew Thompson</a> to request access.
+      To allow time for processing, please submit your request at least 2 workdays prior to the start of the workshop.
+    </li>
+  </ul>
+  Note that there will <strong><i>not</i></strong> be time allocated at the beginning of the lesson for installing software,
+  or for creating necessary accounts. Please allow for enough time in advance of the workshop to troubleshoot
+  any potential issues.
+</p>.
+
 {% else %}
 {% include warning-curriculum.html %}
 {% endif %}
